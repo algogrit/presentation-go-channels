@@ -6,7 +6,9 @@ layout: true
 
 class: center, middle
 
-# {title}
+# An investigative walk through of Go's Channels
+
+##### Alternatively - Learning about Go's channels
 
 Gaurav Agarwal
 
@@ -31,7 +33,7 @@ ex-Consultant, ex-Tarka Labs, ex-BrowserStack, ex-ThoughtWorks
 class: center, middle
 
 Code
-https://github.com/algogrit/presentation-template
+https://github.com/algogrit/presentation-go-channels
 
 Slides
-https://template.slides.algogrit.com
+https://go-channels.slides.algogrit.com

@@ -1,0 +1,24 @@
+Go Concurrency construct - code walkthrough
+  - Explain using pics and sample code
+  - Cover about channels itself for those unfamiliar with channels and goroutines
+  - Cover about Go itself for those unfamiliar with Go language
+
+Using delve debugger explain the structure of a channel
+
+Run the program, study the inner workings of Go's channels
+
+Once you build a fair understanding, then read and understand further
+
+Explain the inner workings using images (Refer Kavya's slides for the shortcuts/optimizations which the scheduler makes)
+
+-> The wild thing?
+
+-> Flip understanding!
+
+--------
+
+Establish understanding
+
+Show them something wild
+
+Using the wild thing, flip the understanding from another angle
