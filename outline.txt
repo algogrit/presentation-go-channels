@@ -3,9 +3,16 @@ Go Concurrency construct - code walkthrough
   - Cover about channels itself for those unfamiliar with channels and goroutines
   - Cover about Go itself for those unfamiliar with Go language
 
+* For each **product**
+  * Get it's **name**, **image**, **price** and product page **link**
+  * Visit the product page and then fetch top **reviews**
+    * For each review
+      * Get it's **name**, **rating**, **content**
+
 Using delve debugger explain the structure of a channel
 
 Run the program, study the inner workings of Go's channels
+  -> Cover
 
 Once you build a fair understanding, then read and understand further
 
