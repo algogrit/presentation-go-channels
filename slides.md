@@ -297,7 +297,7 @@ class: center, middle
 ]
 
 .right-column[
-![hchan Illustration](assets/images/hchan.png)
+![buffer Illustration](assets/images/buffer.png)
 ]
 
 ---
@@ -339,6 +339,21 @@ class: center, middle
 ]
 
 .image-credits[Ankur Anand]
+
+---
+
+.left-column[
+#### Counters
+
+  * **qcount**
+  * **dataqsiz**
+  * sendx
+  * recvx
+]
+
+.right-column[
+![buffer Illustration](assets/images/buffer.png)
+]
 
 ---
 
