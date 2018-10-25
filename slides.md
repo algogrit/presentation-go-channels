@@ -251,6 +251,8 @@ class: center, middle
 
 ![sudog struct](assets/images/code-sudog-struct.png)
 
+.content-credits[Ankur Anand's https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8]
+
 ---
 
 ![recvq Structure](assets/images/recvq-structure.png)
@@ -269,8 +271,78 @@ class: center, middle
 ]
 
 .right-column[
-
+![Kavya's Buffered Queue](assets/images/kavya-sendx-recvx.jpg)
 ]
+
+.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=13]
+
+---
+
+.left-column[
+#### Counters
+
+  * qcount
+  * dataqsiz
+  * **sendx**
+  * **recvx**
+]
+
+.right-column[
+![Kavya's Buffered Queue](assets/images/kavya-sendx-recvx-empty.jpg)
+]
+
+.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=14]
+
+---
+
+.left-column[
+#### Counters
+
+  * qcount
+  * dataqsiz
+  * **sendx**
+  * **recvx**
+]
+
+.right-column[
+![Kavya's Buffered Queue](assets/images/kavya-sendx-recvx-enqueue.jpg)
+]
+
+.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=15]
+
+---
+
+.left-column[
+#### Counters
+
+  * qcount
+  * dataqsiz
+  * **sendx**
+  * **recvx**
+]
+
+.right-column[
+![Kavya's Buffered Queue](assets/images/kavya-sendx-recvx-full.jpg)
+]
+
+.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=16]
+
+---
+
+.left-column[
+#### Counters
+
+  * qcount
+  * dataqsiz
+  * **sendx**
+  * **recvx**
+]
+
+.right-column[
+![Kavya's Buffered Queue](assets/images/kavya-sendx-recvx-dequeue.jpg)
+]
+
+.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=17]
 
 ---
 
@@ -295,7 +367,6 @@ class: center, middle
 ]
 
 .right-column[
-
 ]
 
 ---
