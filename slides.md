@@ -19,7 +19,7 @@ class: center, middle
 * Audience poll
 * Program walk through
 * Deep dive into Channel's internals
-* A little about Go's scheduler
+* Short Demo (if Demo Gods permit!)
 
 ---
 
@@ -222,17 +222,73 @@ class: center, middle
 
 ### `hchan` struct
 
+  * Type information
   * Buffers & queues
   * Counters
-  * Type information
   * Locks & flags
+
+---
+
+.left-column[
+#### Type information
+
+  * elemsize
+  * elemtype
+]
+
+---
+
+.left-column[
+#### Type information
+
+  * **elemsize**
+  * elemtype
+]
+
+.right-column[
+  Represents the size of a single element in memory in bytes
+
+  ![Product struct](assets/images/code-product-struct.png)
+]
+
+---
+
+.left-column[
+#### Type information
+
+  * **elemsize**
+  * elemtype
+]
+
+.right-column[
+  Takes 88 bytes...
+
+  Type `int` takes 8 bytes.
+]
+
+---
+
+.left-column[
+#### Type information
+
+  * elemsize
+  * **elemtype**
+]
+
+.right-column[
+  ![elemtype](assets/images/elemtype.png)
+
+  It consists of proper type information. This informaiton is used when the messages are copied over from one goroutine to the other.
+]
+
+.content-credits[https://golang.org/src/runtime/chan.go?m=text]
 
 ---
 
 .left-column[
 #### Buffers
 
-  * buf
+  * **buf**
 
 #### Queues
 
@@ -245,17 +301,42 @@ class: center, middle
 ]
 
 ---
-class: center, middle
 
+.left-column[
+#### Buffers
+
+  * buf
+
+#### Queues
+
+  * **recvq**
+  * **sendq**
+]
+
+.right-column[
 ## sudog
 
 ![sudog struct](assets/images/code-sudog-struct.png)
+]
 
 .content-credits[Ankur Anand's https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8]
 
 ---
 
+.left-column[
+#### Buffers
+
+  * buf
+
+#### Queues
+
+  * **recvq**
+  * sendq
+]
+
+.right-column[
 ![recvq Structure](assets/images/recvq-structure.png)
+]
 
 .image-credits[Ankur Anand]
 
@@ -274,7 +355,7 @@ class: center, middle
 ![Kavya's Buffered Queue](assets/images/kavya-sendx-recvx.jpg)
 ]
 
-.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=13]
+.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=14]
 
 ---
 
@@ -291,7 +372,7 @@ class: center, middle
 ![Kavya's Buffered Queue](assets/images/kavya-sendx-recvx-empty.jpg)
 ]
 
-.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=14]
+.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=15]
 
 ---
 
@@ -308,7 +389,7 @@ class: center, middle
 ![Kavya's Buffered Queue](assets/images/kavya-sendx-recvx-enqueue.jpg)
 ]
 
-.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=15]
+.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=16]
 
 ---
 
@@ -317,15 +398,15 @@ class: center, middle
 
   * qcount
   * dataqsiz
-  * **sendx**
-  * **recvx**
+  * sendx
+  * recvx
 ]
 
 .right-column[
-![Kavya's Buffered Queue](assets/images/kavya-sendx-recvx-full.jpg)
+![Kavya's Buffered Queue](assets/images/kavya-sendx-recvx-full.png)
 ]
 
-.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=16]
+.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=17]
 
 ---
 
@@ -342,32 +423,49 @@ class: center, middle
 ![Kavya's Buffered Queue](assets/images/kavya-sendx-recvx-dequeue.jpg)
 ]
 
-.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=17]
+.content-credits[Kavya Joshi's https://speakerdeck.com/kavya719/understanding-channels?slide=18]
 
 ---
 
 .left-column[
-#### Type information
+#### Flag
+  * **closed**
 
-  * elemsize
-  * elemtype
-]
-
-.right-column[
-
-]
-
----
-
-.left-column[
-#### Locks & flags
-
+#### Lock
   * lock
-  * closed
 ]
 
 .right-column[
+  Marks the channel as closed.
 ]
+
+---
+
+.left-column[
+#### Flag
+  * closed
+
+#### Lock
+  * **lock**
+]
+
+.right-column[
+  A mutex which controls the access to the channel.
+]
+
+---
+
+class: center, middle
+
+# Seeing debugging in action!
+
+---
+
+### References
+
+* Kavya Joshi's Gopher 2017 talk - [Understanding Channels](https://www.youtube.com/watch?v=KBZlN0izeiY)
+* Ankur Anand's [Diving deep into Golang Channels](https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8)
+* Using delve debugger along with Visual Studio code
 
 ---
 
