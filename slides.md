@@ -137,22 +137,7 @@ Tying it all together,
 
 ---
 
-# Concurrent Scraper
-
-.left-column[
-Tying it all together concurrently, using **goroutines** and **channels**
-]
-
-.right-column[
-  ![Parse review](assets/images/code-concurrent-parser.png)
-]
-
-.content-credits[https://www.youtube.com/watch?v=JqNpNpb5TlQ]
-.image-credits[https://carbon.now.sh/]
-
----
-
-# In action
+# Output
 
 ```json
 {
@@ -182,6 +167,21 @@ Tying it all together concurrently, using **goroutines** and **channels**
 
 ---
 
+# Concurrent Scraper
+
+.left-column[
+Tying it all together concurrently, using **goroutines** and **channels**
+]
+
+.right-column[
+  ![Parse review](assets/images/code-concurrent-parser.png)
+]
+
+.content-credits[https://www.youtube.com/watch?v=JqNpNpb5TlQ]
+.image-credits[https://carbon.now.sh/]
+
+---
+
 class: center, middle
 
 # Deep dive into Go's channel
@@ -189,6 +189,114 @@ class: center, middle
 ![Multiple Gophers](assets/images/multiple-gophers-small.png)
 
 .image-credits[Renee French]
+
+---
+
+# make(chan, _n)
+
+.center.middle[
+## buffered channel
+ch := make(chan Product, 3)
+
+## unbuffered channel
+ch := make(chan Product)
+]
+---
+
+# Using delve to watch the state of channel
+
+### Writing to channel
+![Writer Chan](assets/images/code-writing-to-chan.png)
+
+### Reading from channel
+![Reader Chan](assets/images/code-reading-from-chan.png)
+
+---
+class: center, middle
+
+## Channel Structure
+
+![Channel Structure](assets/images/code-chan-structure.png)
+
+---
+
+### `hchan` struct
+
+  * Buffers & queues
+  * Counters
+  * Type information
+  * Locks & flags
+
+---
+
+.left-column[
+#### Buffers
+
+  * buf
+
+#### Queues
+
+  * recvq
+  * sendq
+]
+
+.right-column[
+![hchan Illustration](assets/images/hchan.png)
+]
+
+---
+class: center, middle
+
+## sudog
+
+![sudog struct](assets/images/code-sudog-struct.png)
+
+---
+
+![recvq Structure](assets/images/recvq-structure.png)
+
+.image-credits[Ankur Anand]
+
+---
+
+.left-column[
+#### Counters
+
+  * qcount
+  * dataqsiz
+  * sendx
+  * recvx
+]
+
+.right-column[
+
+]
+
+---
+
+.left-column[
+#### Type information
+
+  * elemsize
+  * elemtype
+]
+
+.right-column[
+
+]
+
+---
+
+.left-column[
+#### Locks & flags
+
+  * lock
+  * closed
+]
+
+.right-column[
+
+]
 
 ---
 
