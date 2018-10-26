@@ -478,8 +478,9 @@ class: center, middle
 
 ### References
 
-* Kavya Joshi's Gopher 2017 talk - [Understanding Channels](https://www.youtube.com/watch?v=KBZlN0izeiY)
-* Ankur Anand's [Diving deep into Golang Channels](https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8)
+* Kavya Joshi's GopherCon 2017 talk on [Understanding Channels](https://www.youtube.com/watch?v=KBZlN0izeiY)
+* Ankur Anand's post on [Diving deep into Golang Channels](https://codeburst.io/diving-deep-into-the-golang-channels-549fd4ed21a8)
+* Gaurav Agarwal's talk on [Go concurrency constructs](https://www.youtube.com/watch?v=JqNpNpb5TlQ)
 * Using delve debugger along with Visual Studio code
 
 ---
