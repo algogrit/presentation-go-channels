@@ -19,7 +19,7 @@ class: center, middle
 * Audience poll
 * Program walk through
 * Deep dive into Channel's internals
-* Short Demo (if Demo Gods permit!)
+* Demo & Questions (if Demo Gods permit!)
 
 ---
 
@@ -472,7 +472,7 @@ class: center, middle
 
 class: center, middle
 
-# Seeing debugging in action!
+# Watching Channels in action!
 
 ---
 
