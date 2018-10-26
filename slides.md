@@ -19,7 +19,7 @@ class: center, middle
 * Audience poll
 * Program walk through
 * Deep dive into Channel's internals
-* Demo & Questions (if Demo Gods permit!)
+* Demo & Questions (if Demo Gods permit! 🙏)
 
 ---
 
