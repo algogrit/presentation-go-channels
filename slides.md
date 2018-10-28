@@ -192,23 +192,23 @@ class: center, middle
 
 ---
 
-# make(chan, _n)
+# `make(chan, {N})`
 
 .center.middle[
 ## buffered channel
-ch := make(chan Product, 3)
+`ch := make(chan Product, 3)`
 
 ## unbuffered channel
-ch := make(chan Product)
+`ch := make(chan Product)`
 ]
 ---
 
 # Using delve to watch the state of channel
 
-### Writing to channel
+### Sending to a channel
 ![Writer Chan](assets/images/code-writing-to-chan.png)
 
-### Reading from channel
+### Receiving from a channel
 ![Reader Chan](assets/images/code-reading-from-chan.png)
 
 ---
@@ -278,10 +278,27 @@ class: center, middle
 .right-column[
   ![elemtype](assets/images/elemtype.png)
 
-  It consists of proper type information. This informaiton is used when the messages are copied over from one goroutine to the other.
+  Used when messages are copied over from one goroutine to the other
 ]
 
 .content-credits[https://golang.org/src/runtime/chan.go?m=text]
+
+---
+
+.left-column[
+#### Buffers
+
+  * **buf**
+
+#### Queues
+
+  * recvq
+  * sendq
+]
+
+.right-column[
+`make(chan Product, 1) != make(chan Product)`
+]
 
 ---
 
