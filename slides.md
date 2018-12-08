@@ -493,6 +493,16 @@ class: center, middle
 
 ---
 
+# Summarizing Channels
+
+* FIFO (first-in, first-out) - recq/sendq
+* Shared nothing - memory gets copied over
+* ~~Thread~~ Goroutine-safe
+
+* *First-class citizens!*
+
+---
+
 ### References
 
 * Kavya Joshi's GopherCon 2017 talk on [Understanding Channels](https://www.youtube.com/watch?v=KBZlN0izeiY)
