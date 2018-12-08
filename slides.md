@@ -496,10 +496,12 @@ class: center, middle
 # Summarizing Channels
 
 * FIFO (first-in, first-out) - recq/sendq
-* Shared nothing - memory gets copied over
-* ~~Thread~~ Goroutine-safe
+* *Do not communicate by sharing memory; instead, share memory by communicating.*<sup>[1]</sup>
+* ~~Thread~~ Goroutine safe
 
 * *First-class citizens!*
+
+[1]: https://golang.org/doc/effective_go.html#sharing
 
 ---
 
