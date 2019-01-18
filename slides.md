@@ -37,9 +37,7 @@ ex-Tarka Labs, ex-BrowserStack, ex-ThoughtWorks
 
 class: center, middle
 
-Volunteer at Golang India
-
-Remote study group (1st & 3rd Thursday of every month 8:30-9:30 PM)
+Volunteer at Remote study group (1st & 3rd Thursday of every month 8:30-9:30 PM)
 
 Repo: https://github.com/golangindia/StudyGroup
 
