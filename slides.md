@@ -37,15 +37,21 @@ ex-Tarka Labs, ex-BrowserStack, ex-ThoughtWorks
 
 class: center, middle
 
-Volunteer at Remote study group (1st & 3rd Thursday of every month 8:30-9:30 PM)
+Co-organizer of Chennai Go meetup
+
+---
+
+class: center, middle
+
+Volunteer at Remote study group
+
+When: 1st & 3rd Thursday of every month 8:30-9:30 PM
 
 Repo: https://github.com/golangindia/StudyGroup
 
 Page: https://gophersource.com/study-group/
 
-<hr/>
-
-Co-organizer of Chennai Go meetup
+Discussion: https://gophers.slack.com/messages/gostudygroup-India/details/
 
 ---
 
@@ -555,9 +561,3 @@ Slides
 https://go-channels.slides.algogrit.com
 
 .image-credits[Renee French]
-
----
-
-class: center, middle
-
-Twitch: https://www.twitch.tv/algogrit
