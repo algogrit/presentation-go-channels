@@ -531,7 +531,7 @@ class: center, middle
 
 # Summarizing Channels
 
-* FIFO (first-in, first-out) - recq/sendq
+* FIFO (first-in, first-out) - recvq/sendq
 * *Do not communicate by sharing memory; instead, share memory by communicating.*<sup>[1]</sup>
 * ~~Thread~~ Goroutine safe
 
