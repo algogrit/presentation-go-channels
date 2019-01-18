@@ -25,11 +25,29 @@ class: center, middle
 
 class: center, middle
 
-# 🙋
+![Me](assets/images/me.png)
 
-## How many of you are students or are new to programming?
+Software Engineer & Product Developer
 
-# 🙋‍♂️
+Consultant & Trainer @ https://agarwalconsulting.io
+
+ex-Tarka Labs, ex-BrowserStack, ex-ThoughtWorks
+
+---
+
+class: center, middle
+
+Volunteer at Golang India
+
+Remote study group (1st & 3rd Thursday of every month 8:30-9:30 PM)
+
+Repo: https://github.com/golangindia/StudyGroup
+
+Page: https://gophersource.com/study-group/
+
+<hr/>
+
+Co-organizer of Chennai Go meetup
 
 ---
 
@@ -37,7 +55,7 @@ class: center, middle
 
 # 🙋‍♂️
 
-## How many of you are familiar with the Go programming language?
+## How many of you are students or are new to programming in Go?
 
 # 🙋
 
@@ -66,7 +84,7 @@ class: center, middle
 # Scraper
 
 .left-column[
-Scrape for a particular type of products: TV
+Scrape for particular type of products: TV
 ]
 
 .right-column[
@@ -74,6 +92,13 @@ Scrape for a particular type of products: TV
 ]
 
 .image-credits[https://www.amazon.in/]
+
+---
+class: center, middle
+
+![Parse product](assets/images/code-product-struct.png)
+
+.image-credits[https://carbon.now.sh/]
 
 ---
 
@@ -359,6 +384,13 @@ class: center, middle
 
 ---
 
+class: center, middle
+
+## buffered channel
+`ch := make(chan Product, 3)`
+
+---
+
 .left-column[
 #### Counters
 
@@ -516,18 +548,6 @@ class: center, middle
 
 class: center, middle
 
-![Me](assets/images/me.png)
-
-Indie Software Engineer & Trainer
-
-Volunteer / Co-organizer at Golang India & Gopher Chennai
-
-ex-Consultant, ex-Tarka Labs, ex-BrowserStack, ex-ThoughtWorks
-
----
-
-class: center, middle
-
 ![Mic Drop](assets/images/gopher-mic-drop-small.png)
 
 Code
@@ -537,3 +557,9 @@ Slides
 https://go-channels.slides.algogrit.com
 
 .image-credits[Renee French]
+
+---
+
+class: center, middle
+
+Twitch: https://www.twitch.tv/algogrit
