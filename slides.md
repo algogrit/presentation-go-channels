@@ -314,6 +314,13 @@ class: center, middle
 
 ---
 
+class: center, middle
+
+## buffered channel
+`ch := make(chan Product, 3)`
+
+---
+
 .left-column[
 #### Buffers
 
@@ -385,13 +392,6 @@ class: center, middle
 ]
 
 .image-credits[Ankur Anand]
-
----
-
-class: center, middle
-
-## buffered channel
-`ch := make(chan Product, 3)`
 
 ---
 
