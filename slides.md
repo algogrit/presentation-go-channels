@@ -53,6 +53,10 @@ Page: https://gophersource.com/study-group/
 
 Discussion: https://gophers.slack.com/messages/gostudygroup-India/details/
 
+<hr/>
+
+Upcoming meetup on Thursday, 24th January
+
 ---
 
 class: center, middle
